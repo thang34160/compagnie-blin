@@ -5,7 +5,23 @@
 
 
   <main class="flex-grow">
-    <img [src]="imagePath" class="px-[10%]" alt="">
+    <div>
+    <app-carrousel></app-carrousel>
+    </div>
+
+    <div class="flex mt-10 gap-2">
+      <div class=" w-[70%] " >
+        <app-jumbotron></app-jumbotron>
+      </div>
+      <div>
+        <app-news></app-news>
+      </div>
+    </div>
+
+    <div class="h-[15vh] ">
+      <app-gallery ></app-gallery>
+    </div>
+
     <router-outlet></router-outlet>
   </main>
 
