@@ -13,6 +13,9 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "scripts": [
+              "node_modules/flowbite/dist/flowbite.min.js"
+            ],
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -75,6 +78,9 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
+            "scripts": [
+              "node_modules/flowbite/dist/flowbite.min.js"
+            ],
             "polyfills": [
               "zone.js",
               "zone.js/testing"
