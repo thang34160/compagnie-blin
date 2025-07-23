@@ -7,10 +7,11 @@ import {NgOptimizedImage} from '@angular/common';
 import {Jumbotron} from './jumbotron/jumbotron';
 import {News} from './news/news';
 import {Gallery} from './gallery/gallery';
+import {Diary} from './diary/diary';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer, Carrousel, NgOptimizedImage, Jumbotron, News, Gallery],
+  imports: [RouterOutlet, Header, Footer, Carrousel, NgOptimizedImage, Jumbotron, News, Gallery, Diary],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
