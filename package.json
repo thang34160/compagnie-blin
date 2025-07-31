@@ -29,6 +29,7 @@
     "@angular/platform-server": "^20.0.0",
     "@angular/router": "^20.0.0",
     "@angular/ssr": "^20.0.5",
+    "@preline/carousel": "^3.2.0",
     "@tailwindcss/postcss": "^4.1.11",
     "express": "^5.1.0",
     "rxjs": "~7.8.0",
