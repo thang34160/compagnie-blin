@@ -1,35 +1,9 @@
 
-<div class="flex flex-col min-h-screen">
-
-  <app-header></app-header>
+<app-header ></app-header>
 
 
-  <main class="flex-grow">
-    <div>
-    <app-carrousel></app-carrousel>
-    </div>
-
-    <div class="flex justify-center mt-10 gap-2">
-      <div class=" w-[70%] " >
-        <app-jumbotron></app-jumbotron>
-      </div>
-      <div>
-        <app-news></app-news>
-      </div>
-    </div>
-
-    <div class=" mb-10 flex-grow">
-      <app-gallery ></app-gallery>
-    </div>
-
-    <div>
-      <app-diary></app-diary>
-    </div>
-
-    <router-outlet></router-outlet>
-  </main>
+<router-outlet></router-outlet>
 
 
-  <app-footer ></app-footer>
+<app-footer ></app-footer>
 
-</div>

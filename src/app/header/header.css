@@ -1,10 +1,1 @@
-:host {
-  display: flex;
-  height: 80px;
-}
 
-nav {
-  flex: 1; /* Occupe tout l'espace disponible */
-  display: flex;
-  align-items: center; /* Centre verticalement le contenu */
-}
