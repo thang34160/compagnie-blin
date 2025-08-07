@@ -4,11 +4,13 @@
 
   <div class="grid grid-cols-2 gap-2">
 
-    <div class="flex flex-col max-h-[80vh] ">
+    <div class="flex flex-col max-h-[80vh] overflow-y-scroll">
       <h2 class="text-3xl border-b-4 pb-4 ml-4 mb-10 mr-40">le 13 octobre</h2>
       <div class="flex flex-col items-start">
         <div class="flex gap-6">
-          <img class="max-h-[40vh] ml-4 object-contain  rounded-lg" src="spectacle1.jpg" alt="">
+          <a (click)="goToShow(1)" class="spectacle-link hover:cursor-pointer hover:opacity-50 hover:cursor-pointer hover:opacity-50  ">
+            <img class="max-h-[40vh] ml-4 object-contain  rounded-lg" src="spectacle1.jpg" alt="">
+          </a>
           <div class="mx-25">
             <h3 class="font-bold">HORAIRES</h3>
             <h4 class="mt-4 font-bold">Tout public:</h4>
@@ -26,11 +28,13 @@
       </div>
     </div>
 
-    <div class="flex flex-col max-h-[80vh] ">
+    <div class="flex flex-col max-h-[80vh] overflow-y-auto">
       <h2 class="text-3xl border-b-4 pb-4 ml-4 mb-10 mr-40">le 13 octobre</h2>
       <div class="flex flex-col items-start">
         <div class="flex gap-6">
-          <img class="max-h-[40vh] ml-4 object-contain  rounded-lg" src="spectacle2.jpg" alt="">
+          <a (click)="goToShow(2)" class="spectacle-link hover:cursor-pointer hover:opacity-50 ">
+            <img class="max-h-[40vh] ml-4 object-contain  rounded-lg" src="spectacle2.jpg" alt="">
+          </a>
           <div class="mx-25 ">
             <h3 class="font-bold">HORAIRES</h3>
             <h4 class="mt-4 font-bold">Tout public:</h4>
@@ -47,11 +51,13 @@
       </div>
     </div>
 
-    <div class="flex flex-col max-h-[80vh] ">
+    <div class="flex flex-col max-h-[80vh] overflow-y-scroll ">
       <h2 class="text-3xl border-b-4 pb-4 ml-4 mb-10 mr-40">le 13 octobre</h2>
       <div class="flex flex-col items-start">
         <div class="flex gap-6">
-          <img class="max-h-[40vh] ml-4 object-contain  rounded-lg" src="spectacle3.jpg" alt="">
+          <a (click)="goToShow(3)" class="spectacle-link hover:cursor-pointer hover:opacity-50">
+            <img class="max-h-[40vh] ml-4 object-contain  rounded-lg" src="spectacle3.jpg" alt="">
+          </a>
           <div class="mx-25 ">
             <h3 class="font-bold">HORAIRES</h3>
             <h4 class="mt-4 font-bold">Tout public:</h4>
@@ -68,11 +74,13 @@
       </div>
     </div>
 
-    <div class="flex flex-col max-h-[80vh] ">
+    <div class="flex flex-col max-h-[80vh] overflow-y-scroll ">
       <h2 class="text-3xl border-b-4 pb-4 ml-4 mb-10 mr-40">le 13 octobre</h2>
       <div class="flex flex-col items-start">
         <div class="flex gap-6">
-          <img class="max-h-[40vh] ml-4 object-contain  rounded-lg" src="spectacle4.jpg" alt="">
+          <a (click)="goToShow(4)" class="spectacle-link hover:cursor-pointer hover:opacity-50">
+            <img class="max-h-[40vh] ml-4 object-contain  rounded-lg" src="spectacle4.jpg" alt="">
+          </a>
           <div class="mx-25 ">
             <h3 class="font-bold">HORAIRES</h3>
             <h4 class="mt-4 font-bold">Tout public:</h4>

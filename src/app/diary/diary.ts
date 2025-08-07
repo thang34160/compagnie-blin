@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-diary',
@@ -8,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class Diary {
 
+private router = inject(Router);
+
+goToShow(showId: number) {
+  this.router.navigate(['/show'], {
+    fragment: `show-${showId}`
+  });
+}
 }
