@@ -14,16 +14,12 @@ export class Directory {
 
  // Images
   images = [
-    {id: 1, src: 'spectacle1.jpg', title: 'spectacle 1',status: 'en-cours'},
-    {id: 2, src: 'spectacle2.jpg', title: 'spectacle 2', status: 'passes'},
-    {id: 3, src: 'spectacle3.jpg', title: 'spectacle 3', status: 'passes'},
-    {id: 4, src: 'spectacle4.jpg', title: 'spectacle 4', status: 'en-cours'},
-    {id: 5, src: 'spectacle1.jpg', title: 'spectacle 5', status: 'passes'},
-    {id: 6, src: 'spectacle2.jpg', title: 'spectacle 6', status: 'en-cours'},
-    {id: 7, src: 'spectacle3.jpg', title: 'spectacle 7', status: 'passes'},
-    {id: 8, src: 'spectacle4.jpg', title: 'spectacle 8', status: 'passes'},
-    {id: 9, src: 'spectacle1.jpg', title: 'spectacle 9', status: 'passes'},
-    {id: 10, src: 'spectacle2.jpg', title: 'spectacle 10', status: 'passes'}
+    {id: 1, src: '/img/show/les-3-oies-ortie-eglise.jpg', title: 'LES 3 OIES',status: 'en-cours'},
+    {id: 2, src: '/img/show/les-musiciens-breme-animaux-affiche.jpg', title: 'LES MUSICIENS DE BREME', status: 'passes'},
+    {id: 3, src: '/img/show/le-carnaval-des-animaux-le-lion.jpg', title: 'LE CARNAVAL DES ANIMAUX', status: 'passes'},
+    {id: 4, src: '/img/show/le-dormeur-eveille-trompette.jpg', title: 'LE DORMEUR EVEILLE', status: 'en-cours'},
+    {id: 5, src: '/img/show/panique-a-la-cave-demenageurs.jpg', title: 'PANIQUE A LA CAVE', status: 'passes'},
+    {id: 6, src: '/img/show/pimpon-d-or-chevalier.jpg', title: "PIMPON D'OR", status: 'en-cours'},
   ];
 
   getFilteredImages() {

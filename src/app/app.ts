@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {RouterLink, RouterOutlet} from '@angular/router';
+import {NavigationEnd, Router, RouterLink, RouterOutlet} from '@angular/router';
 import {Header} from './header/header';
 import {Footer} from './footer/footer';
 import {Carrousel} from './carrousel/carrousel';
@@ -19,4 +19,15 @@ import {Contact} from './contact/contact';
 export class App {
   protected title = 'compagnie-blin';
 
+  isSpecialRoute = false;
+
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        // Remplacez '/mon-composant-special' par votre route
+        this.isSpecialRoute = event.url === '/show' ||
+          event.url.includes('/show');
+      }
+    });
+  }
 }

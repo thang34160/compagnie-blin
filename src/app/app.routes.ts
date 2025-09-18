@@ -5,7 +5,10 @@ import {Home} from './home/home';
 import {Diary} from './diary/diary';
 import {Show} from './shows/show';
 import {Directory} from './directory/directory';
-import {Expositions} from './expositions/expositions';
+import {BringTheCompany} from './bring-the-company/bring-the-company';
+import {Projects} from './projects/projects';
+import {Infos} from './infos/infos';
+
 
 export const routes: Routes = [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -14,6 +17,7 @@ export const routes: Routes = [
       { path: 'diary', component: Diary},
       { path: 'show', component: Show },
       { path: 'directory', component: Directory},
-      { path: 'expositions', component: Expositions}
-
+      { path: 'bring-the-company', component: BringTheCompany},
+      { path: 'projects', component: Projects},
+      { path: 'infos', component: Infos}
 ];

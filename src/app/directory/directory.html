@@ -6,11 +6,11 @@
   <button type="button" (click)="setFilter('passes')" class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:bg-blue-800  focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-grey-800">Passés</button>
 </div>
 
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4 ml-20 mb-20">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 ml-20 mb-20">
   @for (image of getFilteredImages(); track image.id) {
     <div>
-      <a (click)="goToShow(image.id)"><img class="h-96 w-76 rounded-lg mt-10" [src]="image.src" alt=""></a>
-      <h1 class="mt-4">{{ image.title }}</h1>
+      <a (click)="goToShow(image.id)"><img class="max-w-120 min-w-120 max-h-90 rounded-lg mt-10" [src]="image.src" alt=""></a>
+      <h1 class="mt-4 ">{{ image.title }}</h1>
     </div>
   }
 </div>

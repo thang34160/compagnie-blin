@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Connexion MongoDB
+// Connexion to MongoDB
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -19,15 +19,16 @@ mongoose.connect(process.env.MONGODB_URI, {
   .then(() => console.log('✅ Connecté à MongoDB'))
   .catch((error) => console.error('❌ Erreur connexion MongoDB:', error));
 
-// Routes de test
+// Test route
 app.get('/', (req, res) => {
   res.json({ message: 'API Express fonctionne !' });
 });
 
-// Routes API (à ajouter plus tard)
+// API route
 app.use('/api/shows', require('./routes/shows'));
+app.use('/api/exhibitions', require('./routes/exhibitions'));
 
-// Démarrage du serveur
+// Server start
 app.listen(PORT, () => {
   console.log(`🚀 Serveur Express démarré sur http://localhost:${PORT}`);
 });

@@ -12,9 +12,13 @@ export class Carrousel implements OnInit, OnDestroy {
 
   // Déclaration des images avec typage strict
   protected readonly images = [
-    { src: 'compagnie.jpg', alt: 'Image compagnie' },
-    { src: 'saison.jpg', alt: 'Image saison' },
-    { src: 'expositions.jpg', alt: 'Image expositions' }
+    { src: '/img/auto-carrousel/le-centaure-bleu.jpg', alt: '' },
+    { src: '/img/auto-carrousel/boite-m-jardin.jpg', alt: '' },
+    { src: '/img/auto-carrousel/fee-elsa-fumee.jpg', alt: '' },
+    { src: '/img/auto-carrousel/chatte-chat-autruche.jpg', alt: '' },
+    { src: '/img/auto-carrousel/kastalia-cafe.jpg', alt: '' },
+    { src: '/img/auto-carrousel/gde-bleue-vaches-voiture.jpg', alt: '' },
+    { src: '/img/auto-carrousel/affiche-chatte-blanche.jpg', alt: '' }
   ];
 
   ngOnInit(): void {

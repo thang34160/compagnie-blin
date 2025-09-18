@@ -1,105 +1,868 @@
-<div class="flex flex-col items-center gap-4   min-h-screen py-4 mt-10 bg-amber-50">
+<div class="flex flex-col items-center gap-4   min-h-screen  py-4 mt-10 bg-amber-50">
+  <h1 class="text-6xl">Agenda</h1>
 
-<h1 class="center text-5xl border-b-4 pb-4 mb-10">AGENDA</h1>
+  <!--SEPTEMBER-->
+  <div class="relative overflow-x-auto min-w-280 ">
+    <h2 class="mt-15 mb-5 font-bold text-2xl">SEPTEMBRE 2025 </h2>
+    <table class="w-full text-sm text-left rtl:text-right text-black dark:text-black">
+      <thead class="text-xs text-black uppercase bg-gray-50 dark:bg-amber-50 dark:text-black ">
+      <tr>
+        <th scope="col" class="px-6 py-3">
+        </th>
+        <th scope="col" class="px-6 py-3">
+          DATE
+        </th>
+        <th scope="col" class="px-6 py-3">
+          SPECTACLE
+        </th>
+        <th scope="col" class="px-6 py-3">
+          LIEUX
+        </th>
+        <th scope="col" class="px-6 py-3">
+          HORAIRES
+        </th>
+      </tr>
+      </thead>
 
-  <div class="grid grid-cols-2 gap-2">
+      <tbody>
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200 ">
+        <td class="px-6 py-4">
+          <a href="#" ></a>
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-black">
+          Samedi 13
+        </th>
+        <td class="px-6 py-4">
+          Forum des associations
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Stade municipal
+        </td>
+        <td class="px-6 py-4">
+          10h - 18h
+        </td>
 
-    <div class="flex flex-col max-h-[80vh] overflow-y-scroll">
-      <h2 class="text-3xl border-b-4 pb-4 ml-4 mb-10 mr-40">le 13 octobre</h2>
-      <div class="flex flex-col items-start">
-        <div class="flex gap-6">
-          <a (click)="goToShow(1)" class="spectacle-link hover:cursor-pointer hover:opacity-50 hover:cursor-pointer hover:opacity-50  ">
-            <img class="max-h-[40vh] ml-4 object-contain  rounded-lg" src="spectacle1.jpg" alt="">
-          </a>
-          <div class="mx-25">
-            <h3 class="font-bold">HORAIRES</h3>
-            <h4 class="mt-4 font-bold">Tout public:</h4>
-            <p>Mercredi 2 octobre 15h <br>Dimanche 13 octobre 16h <br>Mercredi 23 octobre 15h <br>Mercredi 14 mai 15h <br>Dimanche 18 mai 16h</p>
-            <h4 class="mt-4 font-bold">Tout public:</h4>
-            <p>Mercredi 2 octobre 15h <br>Dimanche 13 octobre 16h <br>Mercredi 23 octobre 15h <br>Mercredi 14 mai 15h <br>Dimanche 18 mai 16h</p>
-          </div>
-        </div>
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="px-6 py-4">
+          <a href="#" ><img src="" alt="" class="max-h-30 hidden" ></a>
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-black  whitespace-nowrap dark:text-black ">
+          Samedi 20
+        </th>
+        <td class="px-6 py-4">
+          Journée du patrimoine
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - La Boutique
+        </td>
+        <td class="px-6 py-4">
+          14h - 17h
+        </td>
 
-        <p class="ml-4 mr-40 py-10">Poucette a vu le jour dans le cœur d'une tulipe. Elle est si petite qu'une coquille de noix lui sert de berceau. Mais une grenouille l'emporte dans le marais pour la marier à son fils...
-          Un des plus célèbre conte d'Andersen, qui prête aux animaux les sentiments et les comportements humains, laissant deviner en filigrane la condition des jeunes filles face à l'institution du mariage au XIXe siècle.
-          Les décors et les costumes sont directement inspirés de l'architecture paysanne et du costume populaire danois.
-          La partition musicale, écrite par Catherine Gaudin-Casadesus, pour trio à cordes et flûte, utilise les thèmes traditionnels nordiques.
-        </p>
-      </div>
-    </div>
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="px-6 py-4">
+          <a href="#" ><img src="" alt="" class="max-h-30 hidden" ></a>
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-black  whitespace-nowrap dark:text-black ">
+          Dimanche 21
+        </th>
+        <td class="px-6 py-4">
+          Journée du patrimoine
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - La Boutique
+        </td>
+        <td class="px-6 py-4">
+          14h - 17h
+        </td>
 
-    <div class="flex flex-col max-h-[80vh] overflow-y-auto">
-      <h2 class="text-3xl border-b-4 pb-4 ml-4 mb-10 mr-40">le 13 octobre</h2>
-      <div class="flex flex-col items-start">
-        <div class="flex gap-6">
-          <a (click)="goToShow(2)" class="spectacle-link hover:cursor-pointer hover:opacity-50 ">
-            <img class="max-h-[40vh] ml-4 object-contain  rounded-lg" src="spectacle2.jpg" alt="">
-          </a>
-          <div class="mx-25 ">
-            <h3 class="font-bold">HORAIRES</h3>
-            <h4 class="mt-4 font-bold">Tout public:</h4>
-            <p>Mercredi 2 octobre 15h <br>Dimanche 13 octobre 16h <br>Mercredi 23 octobre 15h <br>Mercredi 14 mai 15h <br>Dimanche 18 mai 16h</p>
-            <h4 class="mt-4 font-bold">Tout public:</h4>
-            <p>Mercredi 2 octobre 15h <br>Dimanche 13 octobre 16h <br>Mercredi 23 octobre 15h <br>Mercredi 14 mai 15h <br>Dimanche 18 mai 16h</p>
-          </div>
-        </div>
 
-        <p class="ml-4 mr-40 py-10">Afin d’éprouver la bonté et la générosité du Roi son voisin, le Dragon prend successivement l’apparence d’une pauvre paysanne, d’un mendiant et d’une colombe.
-          S'il est bon, le Roi recevra, en récompense, le don de comprendre le langage des animaux. Mais le secret du Dragon est dangereux ... et la Reine est curieuse...
-          La musique composée dans la gamme chinoise par Catherine Gaudin-Casadesus, pour flûte, violon et clochettes, accompagne les évolutions des personnages, somptueusement costumés dans la grande tradition de l’opéra de Pékin.
-        </p>
-      </div>
-    </div>
 
-    <div class="flex flex-col max-h-[80vh] overflow-y-scroll ">
-      <h2 class="text-3xl border-b-4 pb-4 ml-4 mb-10 mr-40">le 13 octobre</h2>
-      <div class="flex flex-col items-start">
-        <div class="flex gap-6">
-          <a (click)="goToShow(3)" class="spectacle-link hover:cursor-pointer hover:opacity-50">
-            <img class="max-h-[40vh] ml-4 object-contain  rounded-lg" src="spectacle3.jpg" alt="">
-          </a>
-          <div class="mx-25 ">
-            <h3 class="font-bold">HORAIRES</h3>
-            <h4 class="mt-4 font-bold">Tout public:</h4>
-            <p>Mercredi 2 octobre 15h <br>Dimanche 13 octobre 16h <br>Mercredi 23 octobre 15h <br>Mercredi 14 mai 15h <br>Dimanche 18 mai 16h</p>
-            <h4 class="mt-4 font-bold">Tout public:</h4>
-            <p>Mercredi 2 octobre 15h <br>Dimanche 13 octobre 16h <br>Mercredi 23 octobre 15h <br>Mercredi 14 mai 15h <br>Dimanche 18 mai 16h</p>
-          </div>
-        </div>
-
-        <p class="ml-4 mr-40 py-10">Engagé par le Roi pour garder les moutons de la Princesse, le berger Pimpon d’Or libère bien involontairement la forêt des ogres qui y sévissent. Il prend possession de leur demeure et de leurs armures magiques, qui lui permettront de vaincre les chevaliers du Roi et d’épouser la Princesse.
-          Une comédie féerique traitée à la manière des tapisseries et des enluminures médiévales. L’intensité des couleurs et la force décorative du graphisme sont une invite à redécouvrir L’apocalypse d’Angers, La dame à la licorne, Le livre des tournois du roi René et Le cœur d’amour épris.
-          Pour cette troisième collaboration, après L’épouse du Soleil et Panique à la cave Michel Frantz signe une partition inspirée des sonorités des tournois du Moyen-Age.
-        </p>
-      </div>
-    </div>
-
-    <div class="flex flex-col max-h-[80vh] overflow-y-scroll ">
-      <h2 class="text-3xl border-b-4 pb-4 ml-4 mb-10 mr-40">le 13 octobre</h2>
-      <div class="flex flex-col items-start">
-        <div class="flex gap-6">
-          <a (click)="goToShow(4)" class="spectacle-link hover:cursor-pointer hover:opacity-50">
-            <img class="max-h-[40vh] ml-4 object-contain  rounded-lg" src="spectacle4.jpg" alt="">
-          </a>
-          <div class="mx-25 ">
-            <h3 class="font-bold">HORAIRES</h3>
-            <h4 class="mt-4 font-bold">Tout public:</h4>
-            <p>Mercredi 2 octobre 15h <br>Dimanche 13 octobre 16h <br>Mercredi 23 octobre 15h <br>Mercredi 14 mai 15h <br>Dimanche 18 mai 16h</p>
-            <h4 class="mt-4 font-bold">Tout public:</h4>
-            <p>Mercredi 2 octobre 15h <br>Dimanche 13 octobre 16h <br>Mercredi 23 octobre 15h <br>Mercredi 14 mai 15h <br>Dimanche 18 mai 16h</p>
-          </div>
-        </div>
-
-        <p class="ml-4 mr-40 py-10">Italie XVe siècle : La nourrice et le cordonnier, s'entretiennent des malheurs du roi. Toutes les nuits, la ravissante Princesse sa fille use douze paires de souliers de bal, alors que la porte de sa chambre est verrouillée. Personne n'a réussi à percer ce mystère.
-          Un brave soldat tente l’aventure, grâce à une cape invisible donnée par une bonne fée en récompense de sa générosité. Là commence l’enchantement des Princesses de la Nuit...
-          Ce spectacle a été conçu autour de la très belle partition des Danses Antiques de Respighi, orchestration savante d'anciens manuscrits italiens des XVe et XVIe siècles.
-          Les décors et les costumes sont inspirés des gravures et des peintures de Piero Della Francesca, Pisanello et Gozzoli.
-        </p>
-      </div>
-    </div>
-
+      </tbody>
+    </table>
   </div>
 
+<!--OCTOBER-->
+  <div class="relative overflow-x-auto  min-w-280">
+    <h2 class="mt-15 mb-5 font-bold text-2xl">OCTOBRE 2025</h2>
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-black">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-amber-50 dark:text-black">
+      <tr >
+        <th scope="col" class="px-6 py-3">
+        </th>
+        <th scope="col" class="px-6 py-3">
+          DATE
+        </th>
+        <th scope="col" class="px-6 py-3">
+          SPECTACLE
+        </th>
+        <th scope="col" class="px-6 py-3">
+          LIEUX
+        </th>
+        <th scope="col" class="px-6 py-3">
+          HORAIRES
+        </th>
+      </tr>
+      </thead>
 
+      <tbody>
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200 ">
+        <td class="py-4 ">
+          <img src="/img/diary/vignette-les-3-oies-musiciens-breme.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Dimanche 12
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-1" class="font-bold text-xl underline decoration-solid hover:text-red-800">Les 3 Oies</a> & <a href="/show#show-2" class="font-bold text-xl underline decoration-solid hover:text-red-800">Les musiciens de Brême</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          16h - TP
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-les-3-oies-musiciens-breme.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Mercredi 22
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-1" class="font-bold text-xl underline decoration-solid hover:text-red-800">Les 3 Oies</a> & <a href="/show#show-2" class="font-bold text-xl underline decoration-solid hover:text-red-800">Les musiciens de Brême</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          15h - TP-GR
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-les-3-oies-musiciens-breme.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Jeudi 23
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-1" class="font-bold text-xl underline decoration-solid hover:text-red-800">Les 3 Oies</a> & <a href="/show#show-2" class="font-bold text-xl underline decoration-solid hover:text-red-800">Les musiciens de Brême</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          10h et 15h - GR
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-le-carnaval-des-animaux.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Mercredi 29
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-3" class="font-bold text-xl underline decoration-solid hover:text-red-800">Le carnaval des Animaux</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          15h - GR
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-le-carnaval-des-animaux.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Jeudi 30
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-3" class="font-bold text-xl underline decoration-solid hover:text-red-800">Le carnaval des Animaux</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          10h et 15h - GR
+        </td>
+
+      </tbody>
+    </table>
+  </div>
+
+  <!--NOVEMBER-->
+  <div class="relative overflow-x-auto min-w-280">
+    <h2 class="mt-15 mb-5 font-bold text-2xl">NOVEMBRE 2025</h2>
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-black">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-amber-50 dark:text-black">
+      <tr>
+        <th scope="col" class="px-6 py-3">
+        </th>
+        <th scope="col" class="px-6 py-3">
+          DATE
+        </th>
+        <th scope="col" class="px-6 py-3">
+          SPECTACLE
+        </th>
+        <th scope="col" class="px-6 py-3">
+          LIEUX
+        </th>
+        <th scope="col" class="px-6 py-3">
+          HORAIRES
+        </th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class=" py-4">
+          <img src="/img/diary/vignette-le-carnaval-des-animaux.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Dimanche 16
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-3" class="font-bold text-xl underline decoration-solid hover:text-red-800">Carnaval des animaux</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          16h - TP
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-le-carnaval-des-animaux.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Lundi 17
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-3" class="font-bold text-xl underline decoration-solid hover:text-red-800">Carnaval des animaux</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          10h et 14h30
+        </td>
+
+
+
+
+
+      </tbody>
+    </table>
+  </div>
+
+  <!--DECEMBER-->
+  <div class="relative overflow-x-auto  min-w-280">
+    <h2 class="mt-15 mb-5 font-bold text-2xl">DECEMBRE 2025</h2>
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-black">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-amber-50 dark:text-black">
+      <tr >
+        <th scope="col" class="px-6 py-3">
+        </th>
+        <th scope="col" class="px-6 py-3">
+          DATE
+        </th>
+        <th scope="col" class="px-6 py-3">
+          SPECTACLE
+        </th>
+        <th scope="col" class="px-6 py-3">
+          LIEUX
+        </th>
+        <th scope="col" class="px-6 py-3">
+          HORAIRES
+        </th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200 ">
+        <td class="py-4 ">
+          <img src="/img/diary/vignette-le-carnaval-des-animaux.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Dimanche 7
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-3" class="font-bold text-xl underline decoration-solid hover:text-red-800">Carnaval des animaux</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          16h - TP
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-le-carnaval-des-animaux.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Lundi 8
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-3" class="font-bold text-xl underline decoration-solid hover:text-red-800">Carnaval des animaux</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          10h et 14h30 - SC
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-le-carnaval-des-animaux.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Mardi 16
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-3" class="font-bold text-xl underline decoration-solid hover:text-red-800">Carnaval des animaux</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          10h et 14h30 - SC
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-le-carnaval-des-animaux.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Mercredi 17
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-3" class="font-bold text-xl underline decoration-solid hover:text-red-800">Carnaval des Animaux</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          15h - TP-GR
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-le-carnaval-des-animaux.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Lundi 22
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-3" class="font-bold text-xl underline decoration-solid hover:text-red-800">Carnaval des Animaux</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          10h et 15h - GR
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-le-carnaval-des-animaux.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Mardi 23
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-3" class="font-bold text-xl underline decoration-solid hover:text-red-800">Carnaval des Animaux</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          15h - TP-GR
+        </td>
+      </tbody>
+    </table>
+  </div>
+
+  <!--JANUARY-->
+  <div class="relative overflow-x-auto  min-w-280">
+    <h2 class="mt-15 mb-5 font-bold text-2xl">JANVIER 2026</h2>
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-black">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-amber-50 dark:text-black">
+      <tr >
+        <th scope="col" class="px-6 py-3">
+        </th>
+        <th scope="col" class="px-6 py-3">
+          DATE
+        </th>
+        <th scope="col" class="px-6 py-3">
+          SPECTACLE
+        </th>
+        <th scope="col" class="px-6 py-3">
+          LIEUX
+        </th>
+        <th scope="col" class="px-6 py-3">
+          HORAIRES
+        </th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200 ">
+        <td class="py-4 ">
+          <img src="/img/diary/vignette-le-dormeur-eveille.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Mercredi 14
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-4" class="font-bold text-xl underline decoration-solid hover:text-red-800">Le Dormeur éveillé</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          15h - TP-GR
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-le-dormeur-eveille.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Jeudi 15
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-4" class="font-bold text-xl underline decoration-solid hover:text-red-800">Le Dormeur éveillé</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          10h et 14h30 - SC
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-le-dormeur-eveille.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Dimanche 18
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-4" class="font-bold text-xl underline decoration-solid hover:text-red-800">Le Dormeur éveillé</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          16h - TP
+        </td>
+
+
+      </tbody>
+    </table>
+  </div>
+
+  <!--FEBRUARY-->
+  <div class="relative overflow-x-auto  min-w-280">
+    <h2 class="mt-15 mb-5 font-bold text-2xl">FEVRIER 2026</h2>
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-black">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-amber-50 dark:text-black">
+      <tr >
+        <th scope="col" class="px-6 py-3">
+        </th>
+        <th scope="col" class="px-6 py-3">
+          DATE
+        </th>
+        <th scope="col" class="px-6 py-3">
+          SPECTACLE
+        </th>
+        <th scope="col" class="px-6 py-3">
+          LIEUX
+        </th>
+        <th scope="col" class="px-6 py-3">
+          HORAIRES
+        </th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200 ">
+        <td class="py-4 ">
+          <img src="/img/diary/vignette-le-dormeur-eveille.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Mercredi 4
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-4" class="font-bold text-xl underline decoration-solid hover:text-red-800">Le Dormeur éveillé</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          15h - TP-GR
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-le-dormeur-eveille.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Jeudi 5
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-4" class="font-bold text-xl underline decoration-solid hover:text-red-800">Le Dormeur éveillé</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          10h et 14h30 - SC
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-le-dormeur-eveille.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Dimanche 8
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-4" class="font-bold text-xl underline decoration-solid hover:text-red-800">Le Dormeur éveillé</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          16h - TP
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200 ">
+        <td class="py-4 ">
+          <img src="/img/diary/vignette-le-dormeur-eveille.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Lundi 9
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-4" class="font-bold text-xl underline decoration-solid hover:text-red-800">Le Dormeur éveillé</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          10h et 14h30 - SC
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-le-dormeur-eveille.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Mardi 17
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-4" class="font-bold text-xl underline decoration-solid hover:text-red-800">Le Dormeur éveillé</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          10h et 14h30 - SC
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-le-dormeur-eveille.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Mercredi 18
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-4" class="font-bold text-xl underline decoration-solid hover:text-red-800">Le Dormeur éveillé</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          15h - TP-GR
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200 ">
+        <td class="py-4 ">
+          <img src="/img/diary/vignette-le-dormeur-eveille.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Mercredi 25
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-4" class="font-bold text-xl underline decoration-solid hover:text-red-800">Le Dormeur éveillé</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          15h - TP-GR
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-le-dormeur-eveille.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Jeudi 26
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-4" class="font-bold text-xl underline decoration-solid hover:text-red-800">Le Dormeur éveillé</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          10h et 15h - GR
+        </td>
+
+
+      </tbody>
+    </table>
+  </div>
+
+  <!--MARCH-->
+  <div class="relative overflow-x-auto  min-w-280">
+    <h2 class="mt-15 mb-5 font-bold text-2xl">MARS 2026</h2>
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-black">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-amber-50 dark:text-black">
+      <tr >
+        <th scope="col" class="px-6 py-3">
+        </th>
+        <th scope="col" class="px-6 py-3">
+          DATE
+        </th>
+        <th scope="col" class="px-6 py-3">
+          SPECTACLE
+        </th>
+        <th scope="col" class="px-6 py-3">
+          LIEUX
+        </th>
+        <th scope="col" class="px-6 py-3">
+          HORAIRES
+        </th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200 ">
+        <td class="py-4 ">
+          <img src="/img/diary/vignette-panique-a-la-cave.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Mardi 3
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-5" class="font-bold text-xl underline decoration-solid hover:text-red-800">Panique à la cave</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          15h - GR
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-panique-a-la-cave.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Mercredi 4
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-5" class="font-bold text-xl underline decoration-solid hover:text-red-800">Panique à la cave</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          10h et 15h - TP-GR
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-panique-a-la-cave.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Mardi 10
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-5" class="font-bold text-xl underline decoration-solid hover:text-red-800">Panique à la cave</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          10h et 14h30 - SC
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200 ">
+        <td class="py-4 ">
+          <img src="/img/diary/vignette-panique-a-la-cave.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Mercredi 11
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-5" class="font-bold text-xl underline decoration-solid hover:text-red-800">Panique à la cave</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          15h - TP-GR
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-panique-a-la-cave.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Lundi 16
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-5" class="font-bold text-xl underline decoration-solid hover:text-red-800">Panique à la cave</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          10h et 14h30 - SC
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-panique-a-la-cave.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Dimanche 22
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-5" class="font-bold text-xl underline decoration-solid hover:text-red-800">Panique à la cave</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          16h - TP
+        </td>
+
+
+
+
+      </tbody>
+    </table>
+  </div>
+
+  <!--APRIL-->
+  <div class="relative overflow-x-auto  min-w-280">
+    <h2 class="mt-15 mb-5 font-bold text-2xl">AVRIL 2026</h2>
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-black">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-amber-50 dark:text-black">
+      <tr >
+        <th scope="col" class="px-6 py-3">
+        </th>
+        <th scope="col" class="px-6 py-3">
+          DATE
+        </th>
+        <th scope="col" class="px-6 py-3">
+          SPECTACLE
+        </th>
+        <th scope="col" class="px-6 py-3">
+          LIEUX
+        </th>
+        <th scope="col" class="px-6 py-3">
+          HORAIRES
+        </th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200 ">
+        <td class="py-4 ">
+          <img src="/img/diary/vignette-panique-a-la-cave.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Mercredi 1
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-5" class="font-bold text-xl underline decoration-solid hover:text-red-800">Panique à la cave</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          15h - TP-GR
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-panique-a-la-cave.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Jeudi 2
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-5" class="font-bold text-xl underline decoration-solid hover:text-red-800">Panique à la cave</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          10h et 14h30 - SC
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200">
+        <td class="py-4">
+          <img src="/img/diary/vignette-panique-a-la-cave.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Dimanche 12
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-5" class="font-bold text-xl underline decoration-solid hover:text-red-800">Panique à la cave</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          16h - TP
+        </td>
+
+      <tr class="bg-white border-b dark:bg-amber-50 dark:border-gray-700 border-gray-200 ">
+        <td class="py-4 ">
+          <img src="/img/diary/vignette-panique-a-la-cave.jpg" alt="" class="max-h-30">
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          Mercredi 11
+        </th>
+        <td class="px-6 py-4">
+          <a href="/show#show-5" class="font-bold text-xl underline decoration-solid hover:text-red-800">Panique à la cave</a>
+        </td>
+        <td class="px-6 py-4">
+          Montrouge (92120) - Le Beffroi
+        </td>
+        <td class="px-6 py-4">
+          10h et 14h30 - SC
+        </td>
+
+
+      </tbody>
+    </table>
+  </div>
 
 </div>

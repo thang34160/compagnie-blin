@@ -1,0 +1,5 @@
+
+/* Empêche tout composant enfant de masquer le header */
+app-header * {
+  visibility: visible !important;
+}
