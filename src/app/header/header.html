@@ -42,8 +42,8 @@
             <!-- Menu -->
             <div class="absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 top-full left-0 mt-1 w-48 bg-white dark:bg-white rounded-md shadow-lg z-50">
               <ul class="py-2 text-sm text-black dark:text-black">
-                <li><a href="#" class="block px-4 py-2 hover:bg-white dark:hover:bg-gray-600 dark:hover:text-white">Histoire</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-white dark:hover:bg-gray-600 dark:hover:text-white">Equipe</a></li>
+                <li><a href="/history" class="block px-4 py-2 hover:bg-white dark:hover:bg-gray-600 dark:hover:text-white">Histoire</a></li>
+                <li><a href="/team" class="block px-4 py-2 hover:bg-white dark:hover:bg-gray-600 dark:hover:text-white">Equipe</a></li>
                 <li><a routerLink="/directory" class="block px-4 py-2 hover:bg-white dark:hover:bg-gray-600 dark:hover:text-white">Répertoire de spectacles</a></li>
               </ul>
             </div>
@@ -53,20 +53,18 @@
         <!-- Section "La saison" -->
         <li class="group relative">
           <div class="inline-block">
-            <button class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto dark:text-black md:dark:hover:text-red-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+            <a (click)="scrollToElement('gallery'); $event.preventDefault()" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:cursor-pointer hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto dark:text-black md:dark:hover:text-red-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
               LA SAISON
-              <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-              </svg>
-            </button>
+
+            </a>
 
             <!-- Menu -->
-            <div class="absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 top-full left-0 mt-1 w-48 bg-white dark:bg-white rounded-md shadow-lg z-50">
-              <ul class="py-2 text-sm text-gray-700 dark:text-black">
-                <li><a (click)="scrollToElement('gallery'); $event.preventDefault()" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:cursor-pointer">A Montrouge</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Hors les murs</a></li>
-              </ul>
-            </div>
+<!--            <div class="absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 top-full left-0 mt-1 w-48 bg-white dark:bg-white rounded-md shadow-lg z-50">-->
+<!--              <ul class="py-2 text-sm text-gray-700 dark:text-black">-->
+<!--                <li><a (click)="scrollToElement('gallery'); $event.preventDefault()" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:cursor-pointer">A Montrouge</a></li>-->
+<!--                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Hors les murs</a></li>-->
+<!--              </ul>-->
+<!--            </div>-->
           </div>
         </li>
 
@@ -81,7 +79,7 @@
             </button>
 
             <!-- Menu -->
-            <div class="absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 top-full left-0 mt-1 w-48 bg-white dark:bg-white rounded-md shadow-lg z-50">
+            <div class="absolute opacity-0 invisible group-hover:cursor-pointer group-hover:opacity-100 group-hover:visible transition-all duration-200 top-full left-0 mt-1 w-48 bg-white dark:bg-white rounded-md shadow-lg z-50">
               <ul class="py-2 text-sm text-gray-700 dark:text-black">
                 <li><a (click)="goToBring(1)" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Pour un spectacle</a></li>
                 <li><a (click)="goToBring(2)" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Pour une exposition</a></li>
@@ -137,7 +135,7 @@
 
     <div class="flex ">
       <button type="button" class="bg-white rounded-lg border-4 border-gray-500 px-5 py-2.5 text-sm  text-center me-2 mb-2 hover:border-red-700 ">
-        <a href="#" class="py-2 px-3 text-black hover:text-red-700 text-2xl">BILLETERIE</a>
+        <a href="/infos" target="_blank" class="py-2 px-3 text-black hover:text-red-700 text-2xl">BILLETTERIE</a>
       </button>
 
     </div>

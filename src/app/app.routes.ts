@@ -8,6 +8,8 @@ import {Directory} from './directory/directory';
 import {BringTheCompany} from './bring-the-company/bring-the-company';
 import {Projects} from './projects/projects';
 import {Infos} from './infos/infos';
+import {History} from './history/history';
+import {Team} from './team/team';
 
 
 export const routes: Routes = [
@@ -19,5 +21,7 @@ export const routes: Routes = [
       { path: 'directory', component: Directory},
       { path: 'bring-the-company', component: BringTheCompany},
       { path: 'projects', component: Projects},
-      { path: 'infos', component: Infos}
+      { path: 'infos', component: Infos},
+      { path: 'history', component: History},
+      { path: 'team', component: Team}
 ];

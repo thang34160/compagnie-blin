@@ -1,12 +1,12 @@
 <div class="w-full">
-  <div class="flex h-120">
+  <div class="flex h-250">
     <!-- tiltle container -->
-    <div class="w-[30%] h-full flex justify-center items-center">
+    <div class="w-[30%] min-h-[554px] flex justify-center items-center">
       <h2 class="text-7xl text-center ">La saison <br>à <br>Montrouge <br> et <br> hors les murs</h2>
     </div>
 
     <!-- carousel container -->
-    <div class="carousel-container w-[70%]">
+    <div class="carousel-container w-[70%] min-h-[700px]">
       <!-- Conteneur principal du carousel -->
       <div class="carousel flex flex-col items-center">
 
@@ -19,28 +19,26 @@
           </div>
         }
 
-        <div class="w-full flex justify-between items-center px-20 carousel-item active">
-          <button class="carousel-control flex items-center justify-center h-20 w-20 text-5xl border-2 rounded-full border-black bg-gray-300 hover:bg-gray-400 prev" (click)="prev()"><</button>
+        <div class="w-full flex items-center justify-center gap-5  carousel-item active">
+          <button class="carousel-control flex items-center justify-center h-12 w-12 text-3xl border-2 rounded-full border-black bg-gray-300 hover:bg-gray-400 prev" (click)="prev()"><</button>
 
           <!-- Conteneur pour l'image et le lien -->
           <div class="relative group">
             <img [src]="items[currentIndex]?.src"
                  [alt]="items[currentIndex]?.title || 'Image'"
-                 class="max-h-120 transition-opacity duration-300 group-hover:opacity-50">
+                 class="max-w-300 min-w-280 max-h-190 transition-opacity duration-300 group-hover:opacity-50">
 
             <!-- Lien centré et caché par défaut -->
             <a [href]="items[currentIndex]?.link"
                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-      <span class="inline-flex items-center px-6 py-3 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-gray-700 shadow-lg">
+      <span class="inline-flex flex bg-white rounded-lg border-4 border-gray-500 px-2 py-2.5 text- black   text-center me-2 mb-2 hover:border-red-700 hover:text-red-700">
         En savoir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
+
       </span>
             </a>
           </div>
 
-          <button class="carousel-control flex items-center justify-center text-center h-20 w-20 text-5xl border-2 rounded-full border-black bg-gray-300 hover:bg-gray-400 next" (click)="next()">></button>
+          <button class="carousel-control flex items-center justify-center text-center h-12 w-12 text-3xl border-2 rounded-full border-black bg-gray-300 hover:bg-gray-400 next" (click)="next()">></button>
         </div>
         <!-- Contrôles de navigation -->
 
