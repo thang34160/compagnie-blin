@@ -43,6 +43,6 @@ jobs:
           # key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           source: "dist/compagnie-blin/browser/*"
-          target: "./"        # racine de ton espace SFTP (équivalent de sftp://u.../)
+          target: "/htdocs/"        # racine de ton espace SFTP (équivalent de sftp://u.../)
           recursive: true
           strip_components: 0
