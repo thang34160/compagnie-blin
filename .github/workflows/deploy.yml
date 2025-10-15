@@ -1,40 +1,55 @@
-name: Build and Deploy Angular to IONOS FTP
+name: 🚀 Build & Deploy Angular (compagnie-blin) to IONOS
 
 on:
   push:
     branches:
-      - main  # Déclenche le déploiement à chaque push sur main
+      - main  # Déploiement automatique à chaque push sur la branche principale
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Récupération du code
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 2️⃣ Configuration de Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
+      # 3️⃣ Mise en cache pour accélérer les builds
+      - name: Cache node modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      # 4️⃣ Installation propre des dépendances
       - name: Install dependencies
         run: npm ci
 
+      # 5️⃣ Build Angular en mode production
       - name: Build Angular app
         run: npm run build -- --configuration production
 
-      - name: Deploy to IONOS via FTP
+      # 6️⃣ Déploiement automatique vers IONOS via FTP/SFTP
+      - name: Deploy to IONOS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: dist/compagnie-blin/browser
-          server-dir: /htdocs/
-          protocol: ftp
-          port: 21
+          protocol: sftp   # ← Ton hébergement utilise bien SFTP
+          port: 22
+          local-dir: dist/compagnie-blin/browser   # Le dossier contenant index.html
+          server-dir: ./   # La racine de ton espace FTP
           exclude: |
             **/.git*
             **/.github*
             **/node_modules/**
+          timeout: 60000   # Allonge le délai en cas de serveur lent
