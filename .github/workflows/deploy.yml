@@ -1,26 +1,23 @@
-name: 🚀 Build & Deploy Angular (compagnie-blin) to IONOS
+name: 🚀 Build & Deploy Angular (compagnie-blin) to IONOS (SCP)
 
 on:
   push:
     branches:
-      - main  # Déploiement automatique à chaque push sur la branche principale
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Récupération du code
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2️⃣ Configuration de Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      # 3️⃣ Mise en cache pour accélérer les builds
       - name: Cache node modules
         uses: actions/cache@v4
         with:
@@ -29,27 +26,23 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      # 4️⃣ Installation propre des dépendances
       - name: Install dependencies
         run: npm ci
 
-      # 5️⃣ Build Angular en mode production
       - name: Build Angular app
         run: npm run build -- --configuration production
 
-      # 6️⃣ Déploiement automatique vers IONOS via FTP/SFTP
-      - name: Deploy to IONOS
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      # === Déploiement via SCP (fonctionne avec mot de passe ou clé SSH) ===
+      - name: Deploy files to IONOS using SCP
+        uses: appleboy/scp-action@v0.1.6
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          host: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
+          # Utilise password OU key (décommente la méthode que tu choisis)
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: sftp   # ← Ton hébergement utilise bien SFTP
+          # key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
-          local-dir: dist/compagnie-blin/browser   # Le dossier contenant index.html
-          server-dir: ./   # La racine de ton espace FTP
-          exclude: |
-            **/.git*
-            **/.github*
-            **/node_modules/**
-          timeout: 60000   # Allonge le délai en cas de serveur lent
+          source: "dist/compagnie-blin/browser/*"
+          target: "./"        # racine de ton espace SFTP (équivalent de sftp://u.../)
+          recursive: true
+          strip_components: 0
