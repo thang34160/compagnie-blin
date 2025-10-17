@@ -1,7 +1,14 @@
 
 
 <nav class=" bg-white border-gray-200 dark:bg-white dark:border-gray-700 ">
-  <div class="w-full flex flex-wrap items-center justify-between mr-[10%] p-4">
+  <h1 class="text-2xl md:hidden mb-4 font-bold lg:hidden">La compagnie Blin</h1>
+  <div class="w-full flex flex-wrap md:flex-nowrap items-center justify-between mr-[10%] p-4">
+
+
+
+<!--    <div>-->
+<!--      <h1 class="text-2xl md:hidden mb-4 font-bold lg:hidden">La compagnie Blin - Théâtre de marionnettes à fils</h1>-->
+<!--    </div>-->
 
     <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
       <span class="sr-only">Open main menu</span>
@@ -10,29 +17,31 @@
       </svg>
     </button>
 
-    <div>
-      <a routerLink="/">
-        <img src="/img/logo.svg" class="max-h-35" alt="">
+    <div >
+      <a routerLink="/" >
+        <img src="/img/logo.svg" class="hidden md:block max-h-35 " alt="">
       </a>
     </div>
 
-    <div class="mt-auto w-full md:block md:w-auto" id="navbar-dropdown">
+    <div class="hidden mt-auto w-full md:block md:w-auto" id="navbar-dropdown">
       <div class="flex justify-center ">
         <a routerLink="/" class="flex items-center space-x-3 rtl:space-x-reverse">
         <div class="flex flex-col ">
-          <h1 class="mb-8 text-3xl font-semibold whitespace-nowrap dark:text-black">Compagnie BLIN - Théâtre de marionnettes à fils</h1>
+          <h1 class="mb-8 text-3xl font-semibold whitespace-nowrap dark:text-black ">Compagnie BLIN - Théâtre de marionnettes à fils</h1>
         </div>
         </a>
       </div>
 
+
+
       <!-- List of navbar items -->
-      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 text-xl  border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-white dark:border-gray-700">
+      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 text-xl  border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-white md:dark:bg-white dark:border-gray-700">
 
         <!-- Section "La compagnie" -->
         <li class="group relative">
           <div class="inline-block">
 
-            <button class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto dark:text-black md:dark:hover:text-red-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+            <button class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto dark:text-black md:dark:hover:text-red-500 dark:focus:text-red-500 dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
               LA COMPAGNIE
               <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -53,25 +62,19 @@
         <!-- Section "La saison" -->
         <li class="group relative">
           <div class="inline-block">
-            <a (click)="scrollToElement('gallery'); $event.preventDefault()" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:cursor-pointer hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto dark:text-black md:dark:hover:text-red-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+            <a [routerLink]="['/']" fragment="gallery" (click)="scrollToElement('gallery'); $event.preventDefault()" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:cursor-pointer hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto dark:text-black md:dark:hover:text-red-500 dark:focus:text-red-500 dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
               LA SAISON
 
             </a>
 
-            <!-- Menu -->
-<!--            <div class="absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 top-full left-0 mt-1 w-48 bg-white dark:bg-white rounded-md shadow-lg z-50">-->
-<!--              <ul class="py-2 text-sm text-gray-700 dark:text-black">-->
-<!--                <li><a (click)="scrollToElement('gallery'); $event.preventDefault()" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:cursor-pointer">A Montrouge</a></li>-->
-<!--                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Hors les murs</a></li>-->
-<!--              </ul>-->
-<!--            </div>-->
+
           </div>
         </li>
 
         <!-- Section "Nous faire venir" -->
         <li class="group relative">
           <div class="inline-block">
-            <button class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto dark:text-black md:dark:hover:text-red-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+            <button class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto dark:text-black md:dark:hover:text-red-500 dark:focus:text-red-500 dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
               FAIRE VENIR LA COMPAGNIE
               <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -92,28 +95,20 @@
         <li class="group relative">
           <div class="inline-block">
 
-            <button class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto dark:text-black md:dark:hover:text-red-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
-              <a routerLink="/diary">AGENDA</a>
-<!--              <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">-->
-<!--                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>-->
-<!--              </svg>-->
+            <button class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto dark:text-black md:dark:hover:text-red-500 dark:focus:text-red-500 dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+              <a routerLink="/diary" class="dark:focus:text-red-500">AGENDA</a>
+
             </button>
 
-<!--            &lt;!&ndash; Menu &ndash;&gt;-->
-<!--            <div class="absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 top-full left-0 mt-1 w-48 bg-white dark:bg-white rounded-md shadow-lg z-50">-->
-<!--              <ul class="py-2 text-sm text-gray-700 dark:text-black">-->
-<!--                <li><a routerLink="/diary" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">à Montrouge</a></li>-->
-<!--                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">en tournée</a></li>-->
-<!--              </ul>-->
-<!--            </div>-->
+
           </div>
         </li>
 
         <li class="group relative">
           <div class="inline-block">
 
-            <button class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto dark:text-black md:dark:hover:text-red-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
-              <a routerLink="/projects">PROJETS</a>
+            <button class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto dark:text-black md:dark:hover:text-red-500 dark:focus:text-red-500 dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+              <a routerLink="/projects" class="dark:focus:text-red-500">PROJETS</a>
             </button>
 
           </div>
@@ -122,8 +117,8 @@
         <li class="group relative">
           <div class="inline-block">
 
-            <button class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto dark:text-black md:dark:hover:text-red-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
-              <a routerLink="/infos">INFOS PRATIQUES</a>
+            <button class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto dark:text-black md:dark:hover:text-red-500 dark:focus:text-red-500 dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+              <a routerLink="/infos" class="dark:focus:text-red-500">INFOS PRATIQUES</a>
             </button>
 
           </div>
@@ -131,13 +126,11 @@
       </ul>
     </div>
 
-
-
-    <div class="flex ">
+    <div class=" flex ">
       <button type="button" class="bg-white rounded-lg border-4 border-gray-500 px-5 py-2.5 text-sm  text-center me-2 mb-2 hover:border-red-700 ">
-        <a href="/infos" target="_blank" class="py-2 px-3 text-black hover:text-red-700 text-2xl">BILLETTERIE</a>
+        <a href="/infos"  class="py-2 px-3 text-black hover:text-red-700 text-2xl">BILLETTERIE</a>
       </button>
-
     </div>
   </div>
 </nav>
+
