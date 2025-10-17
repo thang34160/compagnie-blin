@@ -33,16 +33,16 @@ jobs:
         run: npm run build -- --configuration production
 
       # === Déploiement via SCP (fonctionne avec mot de passe ou clé SSH) ===
-      - name: Deploy files to IONOS using SCP
-        uses: appleboy/scp-action@v0.1.6
+      - name: 🚀 Deploy files to IONOS using SCP
+        uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
-          # Utilise password OU key (décommente la méthode que tu choisis)
           password: ${{ secrets.FTP_PASSWORD }}
-          # key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           source: "dist/compagnie-blin/browser/*"
-          target: "/htdocs/dist/compagnie-blin/browser"        # racine de ton espace SFTP (équivalent de sftp://u.../)
-          recursive: true
+          target: "/dist/compagnie-blin/browser/"
+          overwrite: true     # remplace les anciens fichiers
           strip_components: 0
+          debug: true          # affichera des logs plus clairs en cas d’erreur
+
